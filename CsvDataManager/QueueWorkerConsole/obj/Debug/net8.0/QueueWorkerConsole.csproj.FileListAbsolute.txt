@@ -1,0 +1,14 @@
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\bin\Debug\net8.0\QueueWorkerConsole.exe
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\bin\Debug\net8.0\QueueWorkerConsole.deps.json
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\bin\Debug\net8.0\QueueWorkerConsole.runtimeconfig.json
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\bin\Debug\net8.0\QueueWorkerConsole.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\bin\Debug\net8.0\QueueWorkerConsole.pdb
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\QueueWorkerConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\QueueWorkerConsole.AssemblyInfoInputs.cache
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\QueueWorkerConsole.AssemblyInfo.cs
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\QueueWorkerConsole.csproj.CoreCompileInputs.cache
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\QueueWorkerConsole.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\refint\QueueWorkerConsole.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\QueueWorkerConsole.pdb
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\QueueWorkerConsole.genruntimeconfig.cache
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\QueueWorkerConsole\obj\Debug\net8.0\ref\QueueWorkerConsole.dll
