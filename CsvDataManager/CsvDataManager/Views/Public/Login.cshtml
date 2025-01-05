@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_PublicLayout.cshtml";
+}
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                     class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <h1 class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</h1>
+                <form>
+
+                    <div class="input-group mb-5">
+                        <span class="input-group-text">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                    </div>
+                    <div class="input-group mb-5">
+                        <span class="input-group-text">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                    </div>
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                    </div>
+                    <p class="small fw-bold text-center text-muted mt-5">
+                        Don't have an account?
+                        <a asp-controller="Public" asp-action="Register" class="link-danger"><u>Register</u></a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QueueWorkerConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+648b99b3f8c94daf8f1191c5b3e52511bf4e9b71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f2a8ef6312b2371f1ca123a33a9d173feb6bd57")]
 [assembly: System.Reflection.AssemblyProductAttribute("QueueWorkerConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QueueWorkerConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

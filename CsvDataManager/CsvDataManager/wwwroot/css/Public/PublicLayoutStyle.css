@@ -1,0 +1,49 @@
+﻿
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+.form-control {
+    background-color: #444;
+    color: white;
+    border: 1px solid #555;
+}
+
+    .form-control:focus {
+        background-color: #555;
+        border-color: #007bff;
+        color: white;
+        box-shadow: none;
+    }
+
+.input-group-text {
+    background-color: #444;
+    color: white;
+    border: 1px solid #555;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
