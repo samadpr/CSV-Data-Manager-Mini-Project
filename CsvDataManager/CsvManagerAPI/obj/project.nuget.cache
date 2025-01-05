@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KpJFgT8GQjc=",
+  "dgSpecHash": "aMw/h78M8tU=",
   "success": true,
   "projectFilePath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvManagerAPI\\CsvManagerAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\asama\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

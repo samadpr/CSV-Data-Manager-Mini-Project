@@ -1,0 +1,13 @@
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\bin\Debug\net8.0\Domain.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache

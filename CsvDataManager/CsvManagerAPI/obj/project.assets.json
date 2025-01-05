@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1658,41 +1674,39 @@
           }
         }
       },
-      "CsvDataManager/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "compile": {
-          "bin/placeholder/CsvDataManager.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CsvDataManager.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "QueueWorkerConsole/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "CsvDataManager": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
-        },
-        "compile": {
-          "bin/placeholder/QueueWorkerConsole.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/QueueWorkerConsole.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -4911,25 +4925,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "CsvDataManager/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../CsvDataManager/CsvDataManager.csproj",
-      "msbuildProject": "../CsvDataManager/CsvDataManager.csproj"
-    },
-    "QueueWorkerConsole/1.0.0": {
-      "type": "project",
-      "path": "../QueueWorkerConsole/QueueWorkerConsole.csproj",
-      "msbuildProject": "../QueueWorkerConsole/QueueWorkerConsole.csproj"
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CsvDataManager >= 1.0.0",
+      "AutoMapper >= 13.0.1",
+      "Domain >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.11",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
-      "QueueWorkerConsole >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -4966,11 +4975,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj": {
-              "projectPath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj"
-            },
-            "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\QueueWorkerConsole\\QueueWorkerConsole.csproj": {
-              "projectPath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\QueueWorkerConsole\\QueueWorkerConsole.csproj"
+            "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\Domain\\Domain.csproj"
             }
           }
         }
@@ -4990,6 +4996,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[8.0.11, )"
