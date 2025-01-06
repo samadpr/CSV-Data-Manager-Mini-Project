@@ -11,3 +11,5 @@ D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.
 D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.pdb
 D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\ref\Domain.dll
 D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache

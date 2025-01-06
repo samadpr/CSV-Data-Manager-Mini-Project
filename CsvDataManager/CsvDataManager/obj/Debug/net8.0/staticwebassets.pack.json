@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CsvDataManager.bundle.scp.css"
     },
     {
+      "Id": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\Pages\\PageLayoutStyle.css",
+      "PackagePath": "staticwebassets\\css\\Pages\\PageLayoutStyle.css"
+    },
+    {
       "Id": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\Public\\PublicLayoutStyle.css",
       "PackagePath": "staticwebassets\\css\\Public\\PublicLayoutStyle.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
+      "PackagePath": "staticwebassets\\js\\Pages\\PageLayout.js"
     },
     {
       "Id": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\site.js",

@@ -12,7 +12,7 @@ namespace CsvManagerAPI.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
             services.AddDbContext<CsvDataManagerDbContext>(options => 
-                options.UseSqlServer(config.GetConnectionString("DefaultConnection"))
+                options.UseSqlServer(config.GetConnectionString("Data Source=ABDUL-SAMAD;Initial Catalog=CsvDataManagerDb;Integrated Security=True;Trust Server Certificate=True"))
             );
             
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);

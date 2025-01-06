@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+    Layout = "~/Views/Shared/_PageLayout.cshtml";
+}
+
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Privacy Policy</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Page" asp-action="Index">Dashboard</a></li>
+                <li class="breadcrumb-item active">Privacy Policy</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="text-center h-100vh">
+        <h1>@ViewData["Title"]</h1>
+
+        <p>Use this page to detail your site's privacy policy.</p>
+    </div>
+</main>

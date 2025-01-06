@@ -8,5 +8,33 @@ namespace CsvDataManager.Controllers
         {
             return View();
         }
+
+        public IActionResult CsvImport()
+        {
+            return View();
+        }
+
+        public IActionResult ManageData()
+        {
+            return View();
+        }
+
+        public IActionResult Profile()
+        {
+            return View();
+        }
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Settings()
+        {
+            return View();
+        }
+
+
     }
+
+
 }

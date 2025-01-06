@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fSN8P6WWdXLX2ygE/z8pYE8jzvcH1pknYBxajW2dpTQ=",
+  "Hash": "bAuFTNq39zN8lf43BahgNCnTcb+SIHEQ387k9pXsn1s=",
   "Source": "CsvDataManager",
   "BasePath": "_content/CsvDataManager",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CsvDataManager.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\Pages\\PageLayoutStyle.css",
+      "SourceId": "CsvDataManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\",
+      "BasePath": "_content/CsvDataManager",
+      "RelativePath": "css/Pages/PageLayoutStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Pages\\PageLayoutStyle.css"
     },
     {
       "Identity": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\Public\\PublicLayoutStyle.css",
@@ -129,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
+      "SourceId": "CsvDataManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\",
+      "BasePath": "_content/CsvDataManager",
+      "RelativePath": "js/Pages/PageLayout.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Pages\\PageLayout.js"
     },
     {
       "Identity": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\site.js",

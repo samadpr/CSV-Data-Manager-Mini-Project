@@ -1,4 +1,5 @@
-﻿@{
+﻿@model CsvDataManager.Dtos.LoginDto
+@{
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_PublicLayout.cshtml";
 }
@@ -12,19 +13,21 @@
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                 <h1 class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</h1>
-                <form>
+                <form method="post">
 
                     <div class="input-group mb-5">
                         <span class="input-group-text">
                             <i class="fas fa-envelope"></i>
                         </span>
-                        <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                        <input type="email" class="form-control" asp-for="Email" placeholder="Your Email" aria-label="Your Email">
+                        <span asp-validation-for="Email" class="text-danger small"></span>
                     </div>
                     <div class="input-group mb-5">
                         <span class="input-group-text">
                             <i class="fas fa-lock"></i>
                         </span>
-                        <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                        <input type="password" class="form-control" asp-for="Password" placeholder="Password" aria-label="Password">
+                        <span asp-validation-for="Password" class="text-danger small"></span>
                     </div>
                     <div class="d-grid mt-4">
                         <button type="submit" class="btn btn-primary btn-lg">Login</button>

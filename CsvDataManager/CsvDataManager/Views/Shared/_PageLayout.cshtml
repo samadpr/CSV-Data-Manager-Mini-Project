@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+    <link rel="stylesheet" href="~/JobPortalSystem_Exercise.styles.css" asp-append-version="true" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="~/css/Pages/PageLayoutStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_details">
+            <i class="bx bxs-file-import icon"></i>
+            <div class="logo_name">CSV-Manager</div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class="bx bx-search"></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Pages" asp-action="Index">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Pages" asp-action="CsvImport">
+                    <i class="bx bx-import"></i>
+                    <span class="link_name">CsvImport</span>
+                </a>
+                <span class="tooltip">CsvImport</span>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Pages" asp-action="ManageData">
+                    <i class="bx bx-list-ul"></i>
+                    <span class="link_name">Manage Data</span>
+                </a>
+                <span class="tooltip">Manage Data</span>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Pages" asp-action="Profile">
+                    <i class="bx bx-user"></i>
+                    <span class="link_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Pages" asp-action="Privacy">
+                    <i class="bx bx-check-shield"></i>
+                    <span class="link_name">Privacy</span>
+                </a>
+                <span class="tooltip">Privacy</span>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Pages" asp-action="Settings">
+                    <i class="bx bx-cog"></i>
+                    <span class="link_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li class="profile">
+                <div class="profile_details">
+                    <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" alt="profile image">
+                    <div class="profile_content">
+                        <div class="name">@ViewContext.HttpContext.Session.GetString("FullName") </div>
+                        <div class="designation">@ViewContext.HttpContext.Session.GetString("Role")</div>
+                    </div>
+                </div>
+                <a id="log_out" href="@Url.Action("Logout", "Public")">
+                    <i class="bx bx-log-out"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-controller="Pages" asp-action="Index">CSV Data Manager</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li> *@
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+        @* <div class="col py-3 ">
+        <div class="nav bg-light shadow-sm header">
+        <div class="col-md-11"></div>
+        <div class="align-items-baseline">
+        <i class="bx bx-bell" style="font-size: 1.5rem;"></i> &nbsp;
+        <i class="bx bx-user-circle" style="font-size: 1.5rem;"></i>
+        </div>
+        </div>
+        @RenderBody()
+        </div> *@
+    </section>
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Samadpr</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/Pages/PageLayout.js"></script>
+</body>
+</html>
