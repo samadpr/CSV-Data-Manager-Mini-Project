@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bAuFTNq39zN8lf43BahgNCnTcb+SIHEQ387k9pXsn1s=",
+  "Hash": "HTbwsircF6PXblAYgLVB7lp2EyznaUtzHdYIzESKqV0=",
   "Source": "CsvDataManager",
   "BasePath": "_content/CsvDataManager",
   "Mode": "Default",
@@ -1345,6 +1345,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\uploads\\CsvSampleData.csv",
+      "SourceId": "CsvDataManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\",
+      "BasePath": "_content/CsvDataManager",
+      "RelativePath": "uploads/CsvSampleData.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\CsvSampleData.csv"
     }
   ]
 }

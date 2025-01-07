@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q1a62hRFKAw=",
+  "dgSpecHash": "UVWriAwW2w0=",
   "success": true,
   "projectFilePath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\QueueWorkerConsole\\QueueWorkerConsole.csproj",
   "expectedPackageFiles": [
@@ -123,6 +123,7 @@
     "C:\\Users\\asama\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\asama\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
@@ -140,7 +141,7 @@
     "C:\\Users\\asama\\.nuget\\packages\\system.formats.asn1\\9.0.0\\system.formats.asn1.9.0.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.3.0\\system.identitymodel.tokens.jwt.8.3.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.io.pipelines\\9.0.0\\system.io.pipelines.9.0.0.nupkg.sha512",
-    "C:\\Users\\asama\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\asama\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",

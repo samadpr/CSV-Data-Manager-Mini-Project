@@ -277,6 +277,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\wwwroot\\uploads\\CsvSampleData.csv",
+      "PackagePath": "staticwebassets\\uploads\\CsvSampleData.csv"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CsvDataManager.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

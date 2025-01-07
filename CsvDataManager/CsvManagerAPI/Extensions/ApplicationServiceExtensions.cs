@@ -1,4 +1,6 @@
 ﻿using Domain.Models;
+using Domain.Services.CsvManager;
+using Domain.Services.CsvManager.Interface;
 using Domain.Services.Login;
 using Domain.Services.Login.Interface;
 using Domain.Services.SignUp;
@@ -22,6 +24,9 @@ namespace CsvManagerAPI.Extensions
 
             services.AddScoped<ILoginRequestRepository, LoginRequestRepository>();
             services.AddScoped<ILoginRequestService, LoginRequestService>();
+
+            services.AddScoped<ICsvManagerRepository, CsvManagerRepository>();
+            services.AddScoped<ICsvManagerService, CsvManagerService>();
 
             return services;
         }

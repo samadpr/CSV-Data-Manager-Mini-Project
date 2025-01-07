@@ -1,4 +1,20 @@
+using CsvDataManager.Service;
+using RabbitMQ.Client;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+var factory = new ConnectionFactory
+{
+    HostName = "localhost",
+    UserName = "guest",
+    Password = "guest"
+};
+using var connection = factory.CreateConnection();
+using var channel = connection.CreateModel();
+//builder.Services.AddSingleton(channel);
+builder.Services.AddSingleton<FileProcessingService>(provider => new FileProcessingService(channel));
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

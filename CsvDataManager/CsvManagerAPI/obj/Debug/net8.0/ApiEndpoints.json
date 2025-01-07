@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
+    "Method": "SaveCsvData",
+    "RelativePath": "api/v1/csv-data-manager/save-csv-data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CsvManagerAPI.API.CsvDataManage.RequestObject.CsvDataRequestObject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CsvManagerAPI.API.User.UserController",
     "Method": "Login",
     "RelativePath": "api/v1/user/login",

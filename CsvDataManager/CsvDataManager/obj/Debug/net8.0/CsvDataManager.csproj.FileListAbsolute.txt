@@ -264,3 +264,4 @@ D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\CsvDataManager\bin\Deb
 D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\CsvDataManager\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\CsvDataManager\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\CsvDataManager\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\CsvDataManager\bin\Debug\net8.0\RabbitMQ.Client.dll
