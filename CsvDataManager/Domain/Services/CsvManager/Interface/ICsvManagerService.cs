@@ -1,14 +1,17 @@
-﻿using Domain.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Domain.Services.CsvManager.DTOs;
+
 namespace Domain.Services.CsvManager.Interface
 {
     public interface ICsvManagerService
     {
-        Task SaveCsvDataAsync(CsvUploader csvUploader, IEnumerable<FileData> fileData);
+        //Task SaveCsvDataAsync(CsvUploader csvUploader, IEnumerable<FileData> fileData);
+        Task SaveCsvDataAsync(CsvDataDto request);
     }
 }

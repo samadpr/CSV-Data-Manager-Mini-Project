@@ -26,7 +26,7 @@ namespace CsvManagerAPI.Extensions
             services.AddScoped<ILoginRequestService, LoginRequestService>();
 
             services.AddScoped<ICsvManagerRepository, CsvManagerRepository>();
-            services.AddScoped<ICsvManagerService, CsvManagerService>();
+            services.AddScoped<ICsvManagerService, CsvManagerService>();    
 
             return services;
         }

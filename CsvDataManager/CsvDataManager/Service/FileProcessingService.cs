@@ -15,7 +15,7 @@ namespace CsvDataManager.Service
             _channel = channel ?? throw new ArgumentNullException(nameof(channel));
         }
 
-        public void ProcessFileAndSendToQueue(string filePath)
+        public void ProcessFileAndSendToQueue(string filePath, Guid userId)
         {
             try
             {
@@ -24,10 +24,10 @@ namespace CsvDataManager.Service
                     throw new FileNotFoundException("File not found at the specified path.");
                 }
 
-                // Use FileStream with FileShare.ReadWrite to avoid file lock issues
                 using var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                 using var reader = new StreamReader(stream);
 
+                Guid sharedId = Guid.NewGuid();
                 int rowCount = 0;
 
                 while (!reader.EndOfStream)
@@ -35,24 +35,23 @@ namespace CsvDataManager.Service
                     var line = reader.ReadLine();
                     var values = line?.Split(',');
 
-                    // Skip invalid lines or empty rows
                     if (values == null || values.Length == 0)
                         continue;
 
-                    // Map CSV line to your data model
-                    var fileData = new CsvFileModelDto
+                    var fileData = new FileDataDto
                     {
-                        Id = Guid.NewGuid(), // Generate a unique ID for each record
+                        FileId = sharedId,
+                        Data = line,
+                        Id = sharedId,
                         FileName = Path.GetFileName(filePath),
                         Extension = Path.GetExtension(filePath),
                         FilePath = filePath,
                         FileSize = new FileInfo(filePath).Length,
                         NoOfRow = ++rowCount,
                         Status = "In Progress",
-                        UserId = Guid.NewGuid()
+                        UserId = userId
                     };
 
-                    // Publish each row to RabbitMQ
                     PublishToQueue(fileData);
                 }
 
@@ -68,11 +67,10 @@ namespace CsvDataManager.Service
             }
         }
 
-        private void PublishToQueue(CsvFileModelDto fileData)
+        private void PublishToQueue(FileDataDto fileData)
         {
             try
             {
-                // Declare the queue (if not already declared)
                 _channel.QueueDeclare(
                     queue: "csv-data-queue",
                     durable: true,
@@ -81,11 +79,9 @@ namespace CsvDataManager.Service
                     arguments: null
                 );
 
-                // Convert fileData object to JSON
                 var message = JsonConvert.SerializeObject(fileData);
                 var body = Encoding.UTF8.GetBytes(message);
 
-                // Publish message to RabbitMQ
                 _channel.BasicPublish(
                     exchange: "",
                     routingKey: "csv-data-queue",

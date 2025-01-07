@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using Domain.Services.CsvManager.DTOs;
 using Domain.Services.CsvManager.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,6 +22,11 @@ namespace Domain.Services.CsvManager
         public async Task AddCsvUploaderAsync(CsvUploader csvUploader)
         {
             await _context.Set<CsvUploader>().AddAsync(csvUploader);
+        }
+
+        public Task AddCsvUploaderAsync(CsvDataDto request)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task AddFileDataAsync(FileData fileData)

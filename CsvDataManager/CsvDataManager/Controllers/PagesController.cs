@@ -54,7 +54,10 @@ namespace CsvDataManager.Controllers
                     filePath = typeOfFileDto.NetworkPath;
                 }
 
-                _fileProcessingService.ProcessFileAndSendToQueue(filePath);
+                string userIdString = HttpContext.Session.GetString("UserId");
+                Guid userId = Guid.Parse(userIdString! ?? string.Empty);
+
+                _fileProcessingService.ProcessFileAndSendToQueue(filePath, userId);
                 ViewData["Message"] = "File processed successfully!";
             }
             catch (Exception ex)

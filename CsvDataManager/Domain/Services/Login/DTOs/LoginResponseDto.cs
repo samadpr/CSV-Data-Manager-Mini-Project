@@ -9,5 +9,6 @@ namespace Domain.Services.Login.DTOs
     public class LoginResponseDto
     {
         public string Token { get; set; } = null!;
+        public Guid userId { get; set; }
     }
 }

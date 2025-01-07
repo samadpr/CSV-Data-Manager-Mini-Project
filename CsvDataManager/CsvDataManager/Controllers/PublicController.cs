@@ -63,6 +63,7 @@ namespace CsvDataManager.Controllers
                 {
                     var responseObject = JObject.Parse(responseContent);
                     var token = responseObject["token"]?.ToString();
+                    var userId = responseObject["userId"]?.ToString();
 
                     if (string.IsNullOrEmpty(token))
                     {
@@ -89,6 +90,7 @@ namespace CsvDataManager.Controllers
 
                     HttpContext.Session.SetString("Token", token);
                     HttpContext.Session.SetString("Email", loginDto.Email);
+                    HttpContext.Session.SetString("UserId", userId);
 
                     return RedirectToAction("Index", "Pages");
                 }
