@@ -139,7 +139,6 @@ namespace QueueWorkerConsole.CsvDataReceiver
             try
             {
                 var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-csv-uploader", uploader);
-                Console.WriteLine($"Response status code: {response.StatusCode}");
 
                 if (response.IsSuccessStatusCode)
                 {

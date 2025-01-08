@@ -15,6 +15,21 @@
         </nav>
     </div>
 
+    @if (ViewData["Message"] != null)
+    {
+        <div style="padding: 15px; border-radius: 5px; text-align: center; font-weight: bold;
+         @if (ViewData["MessageClass"] != null && ViewData["MessageClass"].ToString() == "success")
+         {
+                <text>background-color: #d4f8e5; color: #155724;</text> <!-- Very light green -->
+            }
+            else
+            {
+                <text>background-color: #f8d7da; color: #721c24;</text> <!-- Very light red -->
+            }">
+            @ViewData["Message"]
+            </div>
+    }
+
     <div class="container pt-4">
         <section>
             <form method="post" enctype="multipart/form-data">

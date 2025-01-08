@@ -56,23 +56,21 @@ namespace Domain.Services.Login
 
                 // Create claims
                 var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim("UserId", userId),
-            new Claim("Email", email),
-            new Claim("Role", role)
-        };
+                {
+                    new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                    new Claim("UserId", userId),
+                    new Claim("Email", email),
+                    new Claim("Role", role)
+                };
 
-                // Get the expiration time from configuration
-                int expiresInHours = Convert.ToInt32(_configuration["Jwt:ExpiresInHours"] ?? "1");
 
                 // Create the JWT token
                 var token = new JwtSecurityToken(
                     issuer: _configuration["Jwt:Issuer"],
                     audience: _configuration["Jwt:Audience"],
                     claims: claims,
-                    expires: DateTime.UtcNow.AddHours(expiresInHours),
+                    expires: DateTime.UtcNow.AddDays(1),
                     signingCredentials: signIn
                 );
 

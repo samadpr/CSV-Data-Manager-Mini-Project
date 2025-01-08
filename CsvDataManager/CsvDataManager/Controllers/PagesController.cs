@@ -29,6 +29,7 @@ namespace CsvDataManager.Controllers
             if (typeOfFileDto == null || (string.IsNullOrEmpty(typeOfFileDto.NetworkPath) && typeOfFileDto.CsvFile == null))
             {
                 ViewData["Message"] = "Please provide a valid file or network path.";
+                ViewData["MessageClass"] = "error";  
                 return View();
             }
 
@@ -44,6 +45,7 @@ namespace CsvDataManager.Controllers
                     {
                         Directory.CreateDirectory(directoryPath);
                     }
+
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         await typeOfFileDto.CsvFile.CopyToAsync(fileStream);
@@ -55,17 +57,28 @@ namespace CsvDataManager.Controllers
                 }
 
                 string userIdString = HttpContext.Session.GetString("UserId");
-                Guid userId = Guid.Parse(userIdString! ?? string.Empty);
+                Guid userId = Guid.Parse(userIdString ?? Guid.Empty.ToString());
 
-                _fileProcessingService.ProcessFileAndSendToQueue(filePath, userId);
-                ViewData["Message"] = "File processed successfully!";
+                var status = await _fileProcessingService.ProcessFileAndSendToQueue(filePath, userId);
+                ViewData["Message"] = status;
+
+                if (status.Contains("❌"))
+                {
+                    ViewData["MessageClass"] = "error";
+                }
+                else
+                {
+                    ViewData["MessageClass"] = "success";
+                }
             }
             catch (Exception ex)
             {
-                ViewData["Message"] = $"Error processing file: {ex.Message}";
+                ViewData["Message"] = $"❌ An unexpected error occurred: {ex.Message}";
+                ViewData["MessageClass"] = "error";  
             }
 
             return View();
+
         }
 
 

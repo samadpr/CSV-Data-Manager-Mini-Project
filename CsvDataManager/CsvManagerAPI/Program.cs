@@ -48,15 +48,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     };
 });
 
-builder.Services.AddHttpLogging(logging =>
-{
-    logging.LoggingFields = HttpLoggingFields.All;
+//builder.Services.AddHttpLogging(logging =>
+//{
+//    logging.LoggingFields = HttpLoggingFields.All;
 
-    logging.MediaTypeOptions.AddText("application/javascript");
-    logging.RequestBodyLogLimit = 4096;
-    logging.ResponseBodyLogLimit = 4096;
+//    logging.MediaTypeOptions.AddText("application/javascript");
+//    logging.RequestBodyLogLimit = 4096;
+//    logging.ResponseBodyLogLimit = 4096;
 
-});
+//});
 
 var app = builder.Build();
 
@@ -68,6 +68,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().SetIsOriginAllowed(origin => true));
+
+app.UseDeveloperExceptionPage();
 
 app.UseHttpsRedirection();
 

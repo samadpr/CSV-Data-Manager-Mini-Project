@@ -9,19 +9,21 @@ namespace CsvDataManager.Service
     public class FileProcessingService
     {
         private readonly IModel _channel;
+        private CsvDataSaveApiService _csvDataSaveApiService;
 
         public FileProcessingService(IModel channel)
         {
             _channel = channel ?? throw new ArgumentNullException(nameof(channel));
         }
+        
 
-        public void ProcessFileAndSendToQueue(string filePath, Guid userId)
+        public async Task<string> ProcessFileAndSendToQueue(string filePath, Guid userId)
         {
             try
             {
                 if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
                 {
-                    throw new FileNotFoundException("File not found at the specified path.");
+                    return "❌ File not found at the specified path.";
                 }
 
                 using var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
@@ -29,6 +31,8 @@ namespace CsvDataManager.Service
 
                 Guid sharedId = Guid.NewGuid();
                 int rowCount = 0;
+
+                
 
                 while (!reader.EndOfStream)
                 {
@@ -41,29 +45,43 @@ namespace CsvDataManager.Service
                     var fileData = new FileDataDto
                     {
                         FileId = sharedId,
-                        Data = line,
-                        Id = sharedId,
-                        FileName = Path.GetFileName(filePath),
-                        Extension = Path.GetExtension(filePath),
-                        FilePath = filePath,
-                        FileSize = new FileInfo(filePath).Length,
-                        NoOfRow = ++rowCount,
-                        Status = "In Progress",
-                        UserId = userId
+                        Data = line
                     };
 
                     PublishToQueue(fileData);
                 }
 
-                Console.WriteLine($"File processed successfully. Total rows processed: {rowCount}");
+                CsvFileModelDto csvFileModelDto = new CsvFileModelDto()
+                {
+                    Id = sharedId,
+                    FileName = Path.GetFileName(filePath),
+                    Extension = Path.GetExtension(filePath),
+                    FilePath = filePath,
+                    FileSize = new FileInfo(filePath).Length,
+                    NoOfRow = ++rowCount,
+                    Status = "Progress",
+                    UserId = userId
+                };
+
+                var result = await _csvDataSaveApiService.SaveCsvDataAsync(csvFileModelDto);
+                if (result != null)
+                {
+                    return $"✅ File processed successfully. Total rows processed: {rowCount} |" + " You Can go to Manage Data page to check the data.";
+                }
+
+                return "❌ An error occurred while processing the file.";
+            }
+            catch (FileNotFoundException ex)
+            {
+                return $"❌ File error: {ex.Message}";
             }
             catch (IOException ex)
             {
-                Console.WriteLine($"File access error: {ex.Message}");
+                return $"❌ File access error: {ex.Message}";
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+                return $"❌ An unexpected error occurred: {ex.Message}";
             }
         }
 

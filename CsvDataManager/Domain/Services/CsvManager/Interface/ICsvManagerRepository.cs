@@ -10,9 +10,8 @@ namespace Domain.Services.CsvManager.Interface
 {
     public interface ICsvManagerRepository
     {
-        Task AddCsvUploaderAsync(CsvUploader csvUploader);
-        Task AddCsvUploaderAsync(CsvDataDto request);
-        Task AddFileDataAsync(FileData fileData);
-        Task SaveChangesAsync();
+        Task SaveCsvUploaderAsync(CsvUploader csvUploader);
+        Task SaveFileDataAsync(FileData fileData);
+        Task SaveBatchFileDataAsync(FileData fileDataBatch);
     }
 }

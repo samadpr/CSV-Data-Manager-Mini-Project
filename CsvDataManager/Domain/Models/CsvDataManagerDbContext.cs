@@ -15,11 +15,7 @@ public class CsvDataManagerDbContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<CsvUploader> CsvUploaders { get; set; }
     public DbSet<FileData> FileData { get; set; }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<FileData>()
-            .HasNoKey(); 
-    }
+    
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Data Source=ABDUL-SAMAD;Initial Catalog=CsvDataManagerDb;Integrated Security=True;Trust Server Certificate=True");

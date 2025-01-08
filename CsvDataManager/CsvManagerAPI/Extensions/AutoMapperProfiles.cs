@@ -17,7 +17,13 @@ namespace CsvManagerAPI.Extensions
 
             CreateMap<LoginRequestObject, LoginRequestDto>().ReverseMap();
 
-            CreateMap<CsvDataRequestObject, CsvDataDto>().ReverseMap();
+            CreateMap<CsvUploaderRequestObject, CsvUploaderDto>().ReverseMap();
+
+            CreateMap<CsvUploaderDto, CsvUploader>().ReverseMap();
+
+            CreateMap<FileDataRequestObject, FileDataDto>().ReverseMap();
+
+            CreateMap<FileDataDto, FileData>().ReverseMap();
         }
     }
 }
