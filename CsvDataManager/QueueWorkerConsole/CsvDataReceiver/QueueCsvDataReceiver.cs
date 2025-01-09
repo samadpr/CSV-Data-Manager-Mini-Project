@@ -7,20 +7,27 @@ using RabbitMQ.Client;
 using Newtonsoft.Json;
 using QueueWorkerConsole.Dto;
 using System.Net.Http.Json;
+using QueueWorkerConsole.Service;
 
 namespace QueueWorkerConsole.CsvDataReceiver
 {
-    public static class QueueCsvDataReceiver
+    public class QueueCsvDataReceiver
     {
-        private static readonly HttpClient _httpClient = new HttpClient(new HttpClientHandler
+        private readonly FileDataSaveApiService _fileDataSaveApiService;
+
+        public QueueCsvDataReceiver(FileDataSaveApiService fileDataSaveApiService)
+        {
+            _fileDataSaveApiService = fileDataSaveApiService;
+        }
+        /*private static readonly HttpClient _httpClient = new HttpClient(new HttpClientHandler
         {
             ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true
         })
         {
             Timeout = TimeSpan.FromMinutes(5)
-        };
+        };*/
 
-        public static void Receiver(IModel channel)
+        public void Receiver(IModel channel)
         {
             channel.QueueDeclare(
                 queue: "csv-data-queue",
@@ -45,12 +52,12 @@ namespace QueueWorkerConsole.CsvDataReceiver
                     var csvData = JsonConvert.DeserializeObject<CsvFileModelDto>(message)
                                   ?? throw new Exception("Invalid message format");
 
-                    if (!await CsvUploaderDataInsert(csvData))
+                    /*if (!await CsvUploaderDataInsert(csvData))
                     {
                         Console.WriteLine("Failed to save CsvUploaderDto. Rejecting message.");
                         channel.BasicReject(ea.DeliveryTag, false);
                         return;
-                    }
+                    }*/
 
                     Console.WriteLine("Processing CSV rows...");
                     var rows = csvData.Data.Split('\n', StringSplitOptions.RemoveEmptyEntries);
@@ -65,10 +72,10 @@ namespace QueueWorkerConsole.CsvDataReceiver
 
                         PrintFileData(fileData);
 
-                        if (!await SendFileDataToApiAsync(fileData))
+                        if (!await _fileDataSaveApiService.SaveCsvDataAsync(fileData))
                         {
                             Console.WriteLine("Failed to save file data. Rejecting message.");
-                            channel.BasicReject(ea.DeliveryTag, false); 
+                            channel.BasicReject(ea.DeliveryTag, false);
                             return;
                         }
                     }
@@ -93,7 +100,15 @@ namespace QueueWorkerConsole.CsvDataReceiver
             Console.ReadLine();
         }
 
-        private async static Task<bool> CsvUploaderDataInsert(CsvFileModelDto csvData)
+        private static void PrintFileData(FileDataDto fileData)
+        {
+            Console.WriteLine("Processing FileDataDto...");
+            Console.WriteLine($"FileId: {fileData.FileId}");
+            Console.WriteLine($"Data: {fileData.Data}");
+            Console.WriteLine("---------------------------------------------------");
+        }
+
+        /*private async static Task<bool> CsvUploaderDataInsert(CsvFileModelDto csvData)
         {
             var csvUploaderDto = new CsvUploaderDto
             {
@@ -110,9 +125,9 @@ namespace QueueWorkerConsole.CsvDataReceiver
             PrintCsvUploader(csvUploaderDto);
 
             return await SendUploaderToApiAsync(csvUploaderDto);
-        }
+        }*/
 
-        private static void PrintCsvUploader(CsvUploaderDto uploader)
+        /*private static void PrintCsvUploader(CsvUploaderDto uploader)
         {
             Console.WriteLine("Received CsvUploaderDto:");
             Console.WriteLine($"Id: {uploader.Id}");
@@ -124,17 +139,11 @@ namespace QueueWorkerConsole.CsvDataReceiver
             Console.WriteLine($"Status: {uploader.Status}");
             Console.WriteLine($"UserId: {uploader.UserId}");
             Console.WriteLine("---------------------------------------------------");
-        }
+        }*/
 
-        private static void PrintFileData(FileDataDto fileData)
-        {
-            Console.WriteLine("Processing FileDataDto...");
-            Console.WriteLine($"FileId: {fileData.FileId}");
-            Console.WriteLine($"Data: {fileData.Data}");
-            Console.WriteLine("---------------------------------------------------");
-        }
 
-        private static async Task<bool> SendUploaderToApiAsync(CsvUploaderDto uploader)
+
+        /*private static async Task<bool> SendUploaderToApiAsync(CsvUploaderDto uploader)
         {
             try
             {
@@ -161,9 +170,9 @@ namespace QueueWorkerConsole.CsvDataReceiver
             }
 
             return false;
-        }
+        }*/
 
-        private static async Task<bool> SendFileDataToApiAsync(FileDataDto fileData)
+        /*private static async Task<bool> SendFileDataToApiAsync(FileDataDto fileData)
         {
             try
             {
@@ -184,6 +193,6 @@ namespace QueueWorkerConsole.CsvDataReceiver
             }
 
             return false;
-        }
+        }*/
     }
 }

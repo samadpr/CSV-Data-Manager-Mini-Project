@@ -17,75 +17,75 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CsvDataManager
 build_property.RootNamespace = CsvDataManager
-build_property.ProjectDir = D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\CsvDataManager\
+build_property.ProjectDir = D:\Interview\LucidePlusMachineTest\New Project Clone\CSV-Data-Manager-Mini-Project\CsvDataManager\CsvDataManager\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Interview\LucidePlusMachineTest\Project\CsvDataManager\CsvDataManager
+build_property.MSBuildProjectDirectory = D:\Interview\LucidePlusMachineTest\New Project Clone\CSV-Data-Manager-Mini-Project\CsvDataManager\CsvDataManager
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Home/Index.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Pages/CsvImport.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Pages/CsvImport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ3N2SW1wb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Pages/Index.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Pages/ManageData.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Pages/ManageData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTWFuYWdlRGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Pages/Privacy.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Pages/Profile.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Pages/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Pages/Settings.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Pages/Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcU2V0dGluZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Public/Login.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Public/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Public/Register.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Public/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Shared/Error.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Shared/_PageLayout.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Shared/_PageLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Shared/_PublicLayout.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Shared/_PublicLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QdWJsaWNMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/_ViewImports.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/_ViewStart.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Interview/LucidePlusMachineTest/Project/CsvDataManager/CsvDataManager/Views/Shared/_Layout.cshtml]
+[D:/Interview/LucidePlusMachineTest/New Project Clone/CSV-Data-Manager-Mini-Project/CsvDataManager/CsvDataManager/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lzxryyeqtx

@@ -23,9 +23,8 @@ namespace CsvManagerAPI.API.DataManage
 
         [HttpPost]
         [Route("csv-data-manager/save-csv-uploader")]
-        public async Task<IActionResult> SaveCsvUploader([FromForm] CsvUploaderRequestObject request)
+        public async Task<IActionResult> SaveCsvUploader([FromBody] CsvUploaderRequestObject request)
         {
-            Console.WriteLine(request + "api is working");
             if (request == null || !ModelState.IsValid)
                 return BadRequest("Invalid data.");
 

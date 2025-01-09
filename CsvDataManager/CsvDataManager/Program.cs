@@ -3,20 +3,30 @@ using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-var factory = new ConnectionFactory
+builder.Services.AddSingleton<IConnectionFactory>(new ConnectionFactory
 {
     HostName = "localhost",
     UserName = "guest",
     Password = "guest"
-};
-using var connection = factory.CreateConnection();
-using var channel = connection.CreateModel();
-//builder.Services.AddSingleton(channel);
-builder.Services.AddSingleton<FileProcessingService>(provider => new FileProcessingService(channel));
+});
+
+builder.Services.AddSingleton<IConnection>(provider =>
+{
+    var factory = provider.GetRequiredService<IConnectionFactory>();
+    return factory.CreateConnection();
+});
+
+builder.Services.AddSingleton<IModel>(provider =>
+{
+    var connection = provider.GetRequiredService<IConnection>();
+    return connection.CreateModel();
+});
+
+builder.Services.AddScoped<CsvDataSaveApiService>();
+
+builder.Services.AddScoped<FileProcessingService>();
 
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 builder.Services.AddSession();

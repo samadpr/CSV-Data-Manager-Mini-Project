@@ -16,12 +16,13 @@ namespace CsvDataManager.Service
         {
             var client = _httpClientFactory.CreateClient();
             var response = await client.PostAsJsonAsync($"{_apiBaseUrl}/csv-data-manager/save-csv-uploader", csvFileModel);
+            Console.WriteLine($"Response status code: {response.StatusCode}");
             if(response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadAsStringAsync();
             }
 
-            return string.Empty;
+            return null;
         }
     }
 }

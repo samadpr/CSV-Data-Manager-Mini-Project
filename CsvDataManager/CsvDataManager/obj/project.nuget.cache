@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6YyF6Op16Ss=",
+  "dgSpecHash": "E8sGSoor6cA=",
   "success": true,
-  "projectFilePath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj",
+  "projectFilePath": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asama\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\asama\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

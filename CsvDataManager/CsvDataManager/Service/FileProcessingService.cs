@@ -11,9 +11,10 @@ namespace CsvDataManager.Service
         private readonly IModel _channel;
         private CsvDataSaveApiService _csvDataSaveApiService;
 
-        public FileProcessingService(IModel channel)
+        public FileProcessingService(IModel channel, CsvDataSaveApiService csvDataSaveApiService)
         {
             _channel = channel ?? throw new ArgumentNullException(nameof(channel));
+            _csvDataSaveApiService = csvDataSaveApiService;
         }
         
 
@@ -32,25 +33,6 @@ namespace CsvDataManager.Service
                 Guid sharedId = Guid.NewGuid();
                 int rowCount = 0;
 
-                
-
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    var values = line?.Split(',');
-
-                    if (values == null || values.Length == 0)
-                        continue;
-
-                    var fileData = new FileDataDto
-                    {
-                        FileId = sharedId,
-                        Data = line
-                    };
-
-                    PublishToQueue(fileData);
-                }
-
                 CsvFileModelDto csvFileModelDto = new CsvFileModelDto()
                 {
                     Id = sharedId,
@@ -58,7 +40,7 @@ namespace CsvDataManager.Service
                     Extension = Path.GetExtension(filePath),
                     FilePath = filePath,
                     FileSize = new FileInfo(filePath).Length,
-                    NoOfRow = ++rowCount,
+                    NoOfRow = File.ReadLines(filePath).Count(),
                     Status = "Progress",
                     UserId = userId
                 };
@@ -66,6 +48,25 @@ namespace CsvDataManager.Service
                 var result = await _csvDataSaveApiService.SaveCsvDataAsync(csvFileModelDto);
                 if (result != null)
                 {
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line?.Split(',');
+
+                        if (values == null || values.Length == 0)
+                            continue;
+
+                        var fileData = new FileDataDto
+                        {
+                            FileId = sharedId,
+                            Data = line
+                        };
+
+                        rowCount++;
+
+                        PublishToQueue(fileData);
+                    }
+
                     return $"✅ File processed successfully. Total rows processed: {rowCount} |" + " You Can go to Manage Data page to check the data.";
                 }
 

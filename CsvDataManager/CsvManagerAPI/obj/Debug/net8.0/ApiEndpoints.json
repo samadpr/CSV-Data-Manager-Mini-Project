@@ -8,44 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Extension",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FilePath",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileSize",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "NoOfRow",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Status",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserId",
-        "Type": "System.Guid",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "CsvManagerAPI.API.CsvDataManage.RequestObject.CsvUploaderRequestObject",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -6657,11 +6657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj",
+      "projectUniqueName": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj",
       "projectName": "CsvDataManager",
-      "projectPath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj",
+      "projectPath": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\CsvDataManager.csproj",
       "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
-      "outputPath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\CsvDataManager\\obj\\",
+      "outputPath": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

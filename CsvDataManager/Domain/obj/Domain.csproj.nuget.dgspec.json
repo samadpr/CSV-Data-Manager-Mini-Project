@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\Domain\\Domain.csproj": {}
+    "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\Domain\\Domain.csproj": {
+    "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
-        "outputPath": "D:\\Interview\\LucidePlusMachineTest\\Project\\CsvDataManager\\Domain\\obj\\",
+        "outputPath": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
