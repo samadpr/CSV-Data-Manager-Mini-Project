@@ -5,6 +5,8 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 using CsvDataManagerTest.Fixtures;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace CsvDataManagerTest.Controllers
 {
@@ -20,28 +22,26 @@ namespace CsvDataManagerTest.Controllers
         [Fact]
         public async Task Register_ShouldReturnBadRequest_WhenEmailOrPasswordIsNullOrEmpty()
         {
-            // Arrange
             var signUpRequest = new { Email = "", Password = "" };
 
-            // Act
-            var response = await _httpClient.PostAsJsonAsync("/user/register", signUpRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/register", signUpRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.BadRequest, response.StatusCode);
+
             var content = await response.Content.ReadAsStringAsync();
-            Assert.Contains("Email and Password are required", content);
+            var errorResponse = JsonConvert.DeserializeObject<ProblemDetails>(content);
+
+            Assert.Contains("Email and Password are required", errorResponse.Detail);
         }
+
 
         [Fact]
         public async Task Register_ShouldReturnConflict_WhenEmailAlreadyExists()
         {
-            // Arrange
             var signUpRequest = new { Email = "test@example.com", Password = "password123" };
 
-            // Mock the service to return a conflict
-            var response = await _httpClient.PostAsJsonAsync("/user/register", signUpRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/register", signUpRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.Conflict, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
             Assert.Contains("Email already exists", content);
@@ -50,13 +50,10 @@ namespace CsvDataManagerTest.Controllers
         [Fact]
         public async Task Register_ShouldReturnOk_WhenUserRegisteredSuccessfully()
         {
-            // Arrange
             var signUpRequest = new { Email = "test@example.com", Password = "password123" };
 
-            // Mock the service to return success
-            var response = await _httpClient.PostAsJsonAsync("/user/register", signUpRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/register", signUpRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
             Assert.Contains("User registered successfully", content);
@@ -65,13 +62,10 @@ namespace CsvDataManagerTest.Controllers
         [Fact]
         public async Task Register_ShouldReturnInternalServerError_WhenUnexpectedErrorOccurs()
         {
-            // Arrange
             var signUpRequest = new { Email = "test@example.com", Password = "password123" };
 
-            // Simulate an internal server error
-            var response = await _httpClient.PostAsJsonAsync("/user/register", signUpRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/register", signUpRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.InternalServerError, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
             Assert.Contains("An unexpected error occurred while processing your request", content);
@@ -80,13 +74,10 @@ namespace CsvDataManagerTest.Controllers
         [Fact]
         public async Task Login_ShouldReturnBadRequest_WhenEmailOrPasswordIsNullOrEmpty()
         {
-            // Arrange
             var loginRequest = new { Email = "", Password = "" };
 
-            // Act
-            var response = await _httpClient.PostAsJsonAsync("/user/login", loginRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/login", loginRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.BadRequest, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
             Assert.Contains("Email and Password are required", content);
@@ -95,13 +86,10 @@ namespace CsvDataManagerTest.Controllers
         [Fact]
         public async Task Login_ShouldReturnUnauthorized_WhenInvalidCredentialsAreProvided()
         {
-            // Arrange
             var loginRequest = new { Email = "invalid@example.com", Password = "wrongpassword" };
 
-            // Act
-            var response = await _httpClient.PostAsJsonAsync("/user/login", loginRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/login", loginRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.Unauthorized, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
             Assert.Contains("Invalid email or password", content);
@@ -110,13 +98,10 @@ namespace CsvDataManagerTest.Controllers
         [Fact]
         public async Task Login_ShouldReturnOk_WhenValidCredentialsAreProvided()
         {
-            // Arrange
             var loginRequest = new { Email = "test@example.com", Password = "password123" };
 
-            // Act
-            var response = await _httpClient.PostAsJsonAsync("/user/login", loginRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/login", loginRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
             Assert.NotNull(content);
@@ -125,13 +110,10 @@ namespace CsvDataManagerTest.Controllers
         [Fact]
         public async Task Login_ShouldReturnInternalServerError_WhenUnexpectedErrorOccurs()
         {
-            // Arrange
             var loginRequest = new { Email = "test@example.com", Password = "password123" };
 
-            // Simulate an internal server error
-            var response = await _httpClient.PostAsJsonAsync("/user/login", loginRequest);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/user/login", loginRequest);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.InternalServerError, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
             Assert.Contains("An unexpected error occurred while processing your request", content);
