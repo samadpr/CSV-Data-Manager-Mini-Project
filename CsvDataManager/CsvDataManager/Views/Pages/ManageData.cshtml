@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Dictionary<string, string>>
+@{
     ViewData["Title"] = "Manage Data";
     Layout = "~/Views/Shared/_PageLayout.cshtml";
 }
@@ -13,4 +14,32 @@
             </ol>
         </nav>
     </div>
+    @if (Model.Count == 0)
+    {
+        <p>No data found for the uploaded files.</p>
+    }
+    else
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    @foreach (var header in Model.FirstOrDefault()?.Keys)
+                    {
+                        <th>@header</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        @foreach (var value in row.Values)
+                        {
+                            <td>@value</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 </main>

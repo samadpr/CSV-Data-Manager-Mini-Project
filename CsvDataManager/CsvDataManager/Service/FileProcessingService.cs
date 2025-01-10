@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System.IO;
+using System.Reflection.PortableExecutable;
 using System.Text;
 
 namespace CsvDataManager.Service
@@ -33,6 +34,14 @@ namespace CsvDataManager.Service
                 Guid sharedId = Guid.NewGuid();
                 int rowCount = 0;
 
+                var headersLine = await reader.ReadLineAsync();
+                if (string.IsNullOrEmpty(headersLine))
+                {
+                    return "❌ The file is empty.";
+                }
+
+                var headers = headersLine.Split(',');
+
                 CsvFileModelDto csvFileModelDto = new CsvFileModelDto()
                 {
                     Id = sharedId,
@@ -50,16 +59,19 @@ namespace CsvDataManager.Service
                 {
                     while (!reader.EndOfStream)
                     {
-                        var line = reader.ReadLine();
+                        var line = await reader.ReadLineAsync();
                         var values = line?.Split(',');
 
                         if (values == null || values.Length == 0)
                             continue;
 
+                        var rowData = headers.ToArray().Zip(values.ToArray(), (header, value) => new { header, value })
+                                        .ToDictionary(x => x.header, x => x.value);
+
                         var fileData = new FileDataDto
                         {
                             FileId = sharedId,
-                            Data = line
+                            Data = JsonConvert.SerializeObject(rowData)
                         };
 
                         rowCount++;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K+7rJZyXTwpgEG9lX2uEiM9Z39IphXsye5oEFtAGtPc=",
+  "Hash": "cEbciz1not9n3PKESYVaR+xdMndP2X0eiz69YioThm0=",
   "Source": "CsvDataManager",
   "BasePath": "_content/CsvDataManager",
   "Mode": "Default",
@@ -1364,6 +1364,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\CsvSampleData.csv"
+    },
+    {
+      "Identity": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\uploads\\effects-of-covid-19-on-trade-at-15-december-2021-provisional.csv",
+      "SourceId": "CsvDataManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\",
+      "BasePath": "_content/CsvDataManager",
+      "RelativePath": "uploads/effects-of-covid-19-on-trade-at-15-december-2021-provisional.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\effects-of-covid-19-on-trade-at-15-december-2021-provisional.csv"
     }
   ]
 }

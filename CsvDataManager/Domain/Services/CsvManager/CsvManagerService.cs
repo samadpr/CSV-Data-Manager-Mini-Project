@@ -47,5 +47,11 @@ namespace Domain.Services.CsvManager
             var fileDataBatch = _mapper.Map<FileData>(fileDataDtos);
             await _repository.SaveBatchFileDataAsync(fileDataBatch);
         }
+
+        public async Task<List<FileDataDto>> GetFileDataByUserIdAsync(Guid userId)
+        {
+            var fileDataList = await _repository.GetFileDataByUserIdAsync(userId);
+            return _mapper.Map<List<FileDataDto>>(fileDataList);
+        }
     }
 }

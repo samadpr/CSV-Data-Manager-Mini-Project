@@ -1,7 +1,10 @@
+using CsvDataManager.Extensions;
 using CsvDataManager.Service;
 using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddApplicationServices(builder.Configuration);
 
 builder.Services.AddSingleton<IConnectionFactory>(new ConnectionFactory
 {
@@ -21,11 +24,6 @@ builder.Services.AddSingleton<IModel>(provider =>
     var connection = provider.GetRequiredService<IConnection>();
     return connection.CreateModel();
 });
-
-builder.Services.AddScoped<CsvDataSaveApiService>();
-
-builder.Services.AddScoped<FileProcessingService>();
-
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();

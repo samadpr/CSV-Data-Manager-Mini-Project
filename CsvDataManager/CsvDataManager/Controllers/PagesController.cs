@@ -7,10 +7,12 @@ namespace CsvDataManager.Controllers
     public class PagesController : Controller
     {
         private readonly FileProcessingService _fileProcessingService;
+        private readonly CsvDataRetrieveApiService _csvDataRetrieveApiService;
 
-        public PagesController(FileProcessingService fileProcessingService)
+        public PagesController(FileProcessingService fileProcessingService, CsvDataRetrieveApiService csvDataRetrieveApiService)
         {
             _fileProcessingService = fileProcessingService;
+            _csvDataRetrieveApiService = csvDataRetrieveApiService;
         }
         public IActionResult Index()
         {
@@ -83,9 +85,21 @@ namespace CsvDataManager.Controllers
 
 
 
-        public IActionResult ManageData()
+        public async Task<IActionResult> ManageData()
         {
-            return View();
+            string userIdString = HttpContext.Session.GetString("UserId");
+            if (string.IsNullOrEmpty(userIdString))
+            {
+                ViewData["Message"] = "❌ User session not found.";
+                return View(new List<Dictionary<string, string>>());
+            }
+
+            Guid userId = Guid.Parse(userIdString);
+
+            // Retrieve data from the API service
+            var fileDataList = await _csvDataRetrieveApiService.GetFileDataByUserIdAsync(userId);
+
+            return View(fileDataList);
         }
 
         public IActionResult Profile()

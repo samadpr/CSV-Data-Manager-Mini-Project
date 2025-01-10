@@ -281,6 +281,10 @@
       "PackagePath": "staticwebassets\\uploads\\CsvSampleData.csv"
     },
     {
+      "Id": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\uploads\\effects-of-covid-19-on-trade-at-15-december-2021-provisional.csv",
+      "PackagePath": "staticwebassets\\uploads\\effects-of-covid-19-on-trade-at-15-december-2021-provisional.csv"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CsvDataManager.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

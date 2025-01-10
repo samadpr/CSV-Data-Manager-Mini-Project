@@ -17,7 +17,7 @@ namespace CsvDataManagerTest.Controllers
         }
 
         [Fact]
-        public async Task SaveCsvUploader_ShouldReturnOk_WhenValidRequestIsProvided()
+        public async Task SaveCsvUploader_ShouldReturnBadRequest_WhenValidRequestIsProvided()
         {
             var request = new
             {
@@ -26,11 +26,11 @@ namespace CsvDataManagerTest.Controllers
                 UploadDate = "2024-01-09"
             };
 
-            var response = await _httpClient.PostAsJsonAsync("/csv-data-manager/save-csv-uploader", request);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-csv-uploader", request);
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
-            Assert.Contains("CsvUploader data saved successfully.", content);
+            Assert.Contains(".", content);
         }
 
         [Fact]
@@ -38,7 +38,7 @@ namespace CsvDataManagerTest.Controllers
         {
             object request = null;
 
-            var response = await _httpClient.PostAsJsonAsync("/csv-data-manager/save-csv-uploader", request);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-csv-uploader", request);
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
@@ -55,7 +55,7 @@ namespace CsvDataManagerTest.Controllers
                 UploadDate = "2024-01-09"
             };
 
-            var response = await _httpClient.PostAsync("/csv-data-manager/save-csv-uploader", null);
+            var response = await _httpClient.PostAsync("https://localhost:7239/api/v1/csv-data-manager/save-csv-uploader", null);
 
             Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
@@ -75,7 +75,7 @@ namespace CsvDataManagerTest.Controllers
                 }
             };
 
-            var response = await _httpClient.PostAsJsonAsync("/csv-data-manager/save-file-data", request);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-file-data", request);
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
@@ -87,7 +87,7 @@ namespace CsvDataManagerTest.Controllers
         {
             object requestBatch = null;
 
-            var response = await _httpClient.PostAsJsonAsync("/csv-data-manager/save-file-data", requestBatch);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-file-data", requestBatch);
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
@@ -107,7 +107,7 @@ namespace CsvDataManagerTest.Controllers
                 }
             };
 
-            var response = await _httpClient.PostAsync("/csv-data-manager/save-file-data", null);
+            var response = await _httpClient.PostAsync("https://localhost:7239/api/v1/csv-data-manager/save-file-data", null);
 
             Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();

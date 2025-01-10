@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
+    "Method": "GetFileDataByUserId",
+    "RelativePath": "api/v1/get-file-data/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CsvManagerAPI.API.User.UserController",
     "Method": "Login",
     "RelativePath": "api/v1/user/login",

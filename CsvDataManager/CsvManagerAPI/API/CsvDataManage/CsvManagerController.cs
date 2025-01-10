@@ -61,6 +61,25 @@ namespace CsvManagerAPI.API.DataManage
             }
         }
 
+        [HttpGet]
+        [Route("get-file-data/{userId}")]
+        public async Task<IActionResult> GetFileDataByUserId(Guid userId)
+        {
+            try
+            {
+                var fileDataList = await _csvManagerService.GetFileDataByUserIdAsync(userId);
+
+                if (fileDataList == null || fileDataList.Count == 0)
+                    return NotFound("No data found for the given UserId.");
+
+                return Ok(fileDataList);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
     }
 }
 
