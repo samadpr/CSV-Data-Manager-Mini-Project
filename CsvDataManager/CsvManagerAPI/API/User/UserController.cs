@@ -12,7 +12,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace CsvManagerAPI.API.User
 {
     [ApiController]
-   
     public class UserController : BaseApiController<UserController>
     {
         private readonly IMapper _mapper;

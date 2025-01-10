@@ -19,13 +19,6 @@ namespace QueueWorkerConsole.CsvDataReceiver
         {
             _fileDataSaveApiService = fileDataSaveApiService;
         }
-        /*private static readonly HttpClient _httpClient = new HttpClient(new HttpClientHandler
-        {
-            ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true
-        })
-        {
-            Timeout = TimeSpan.FromMinutes(5)
-        };*/
 
         public void Receiver(IModel channel)
         {
@@ -52,12 +45,6 @@ namespace QueueWorkerConsole.CsvDataReceiver
                     var csvData = JsonConvert.DeserializeObject<CsvFileModelDto>(message)
                                   ?? throw new Exception("Invalid message format");
 
-                    /*if (!await CsvUploaderDataInsert(csvData))
-                    {
-                        Console.WriteLine("Failed to save CsvUploaderDto. Rejecting message.");
-                        channel.BasicReject(ea.DeliveryTag, false);
-                        return;
-                    }*/
 
                     Console.WriteLine("Processing CSV rows...");
                     var rows = csvData.Data.Split('\n', StringSplitOptions.RemoveEmptyEntries);
@@ -108,91 +95,5 @@ namespace QueueWorkerConsole.CsvDataReceiver
             Console.WriteLine("---------------------------------------------------");
         }
 
-        /*private async static Task<bool> CsvUploaderDataInsert(CsvFileModelDto csvData)
-        {
-            var csvUploaderDto = new CsvUploaderDto
-            {
-                Id = csvData.Id,
-                FileName = csvData.FileName,
-                Extension = csvData.Extension,
-                FilePath = csvData.FilePath,
-                FileSize = csvData.FileSize,
-                NoOfRow = csvData.NoOfRow,
-                Status = csvData.Status,
-                UserId = csvData.UserId
-            };
-
-            PrintCsvUploader(csvUploaderDto);
-
-            return await SendUploaderToApiAsync(csvUploaderDto);
-        }*/
-
-        /*private static void PrintCsvUploader(CsvUploaderDto uploader)
-        {
-            Console.WriteLine("Received CsvUploaderDto:");
-            Console.WriteLine($"Id: {uploader.Id}");
-            Console.WriteLine($"FileName: {uploader.FileName}");
-            Console.WriteLine($"Extension: {uploader.Extension}");
-            Console.WriteLine($"FilePath: {uploader.FilePath}");
-            Console.WriteLine($"FileSize: {uploader.FileSize} bytes");
-            Console.WriteLine($"NoOfRow: {uploader.NoOfRow}");
-            Console.WriteLine($"Status: {uploader.Status}");
-            Console.WriteLine($"UserId: {uploader.UserId}");
-            Console.WriteLine("---------------------------------------------------");
-        }*/
-
-
-
-        /*private static async Task<bool> SendUploaderToApiAsync(CsvUploaderDto uploader)
-        {
-            try
-            {
-                var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-csv-uploader", uploader);
-                Console.WriteLine($"Response status code: {response.StatusCode}");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    Console.WriteLine(" CsvUploaderDto saved successfully.");
-                    return true;
-                }
-                else
-                {
-                    Console.WriteLine($" API responded with: {response.StatusCode}");
-                    Console.WriteLine($"Error: {await response.Content.ReadAsStringAsync()}");
-
-                }
-
-                
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($" Error sending CsvUploaderDto to API: {ex.Message}");
-            }
-
-            return false;
-        }*/
-
-        /*private static async Task<bool> SendFileDataToApiAsync(FileDataDto fileData)
-        {
-            try
-            {
-                var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-file-data", fileData);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    Console.WriteLine(" File data saved successfully.");
-                    return true;
-                }
-
-                Console.WriteLine($"API responded with: {response.StatusCode}");
-                Console.WriteLine($"Error: {await response.Content.ReadAsStringAsync()}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error sending file data to API: {ex.Message}");
-            }
-
-            return false;
-        }*/
     }
 }
