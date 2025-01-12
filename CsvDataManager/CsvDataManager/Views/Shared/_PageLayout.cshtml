@@ -71,8 +71,8 @@
                 <div class="profile_details">
                     <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" alt="profile image">
                     <div class="profile_content">
-                        <div class="name">@ViewContext.HttpContext.Session.GetString("FullName") </div>
-                        <div class="designation">@ViewContext.HttpContext.Session.GetString("Role")</div>
+                        <div class="name">@ViewContext.HttpContext.Session.GetString("Email") </div>
+                        <div class="designation">@ViewContext.HttpContext.Session.GetString("")</div>
                     </div>
                 </div>
                 <a id="log_out" href="@Url.Action("Logout", "Public")">
@@ -108,16 +108,6 @@
                 @RenderBody()
             </main>
         </div>
-        @* <div class="col py-3 ">
-        <div class="nav bg-light shadow-sm header">
-        <div class="col-md-11"></div>
-        <div class="align-items-baseline">
-        <i class="bx bx-bell" style="font-size: 1.5rem;"></i> &nbsp;
-        <i class="bx bx-user-circle" style="font-size: 1.5rem;"></i>
-        </div>
-        </div>
-        @RenderBody()
-        </div> *@
     </section>
     <footer id="footer" class="footer">
         <div class="copyright">

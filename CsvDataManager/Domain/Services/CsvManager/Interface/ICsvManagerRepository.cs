@@ -11,8 +11,9 @@ namespace Domain.Services.CsvManager.Interface
     public interface ICsvManagerRepository
     {
         Task SaveCsvUploaderAsync(CsvUploader csvUploader);
-        Task SaveFileDataAsync(FileData fileData);
+        //Task SaveFileDataAsync(FileData fileData);
         Task SaveBatchFileDataAsync(FileData fileDataBatch);
         Task<List<FileData>> GetFileDataByUserIdAsync(Guid userId);
+        Task<List<CsvUploader>> GetCsvFileByUserIdAsync(Guid userId);
     }
 }

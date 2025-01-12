@@ -1,6 +1,38 @@
 [
   {
     "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
+    "Method": "GetCsvFileByUserId",
+    "RelativePath": "api/v1/csv-data-manager/get-csv-file/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
+    "Method": "GetFileDataByUserId",
+    "RelativePath": "api/v1/csv-data-manager/get-file-data/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
     "Method": "SaveCsvUploader",
     "RelativePath": "api/v1/csv-data-manager/save-csv-uploader",
     "HttpMethod": "POST",
@@ -26,22 +58,6 @@
       {
         "Name": "requestBatch",
         "Type": "CsvManagerAPI.API.CsvDataManage.RequestObject.FileDataRequestObject",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
-    "Method": "GetFileDataByUserId",
-    "RelativePath": "api/v1/get-file-data/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

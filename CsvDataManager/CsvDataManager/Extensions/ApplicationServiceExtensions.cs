@@ -1,4 +1,5 @@
 ﻿using CsvDataManager.Service;
+using CsvDataManager.Service.Interface;
 
 namespace CsvDataManager.Extensions
 {
@@ -10,7 +11,7 @@ namespace CsvDataManager.Extensions
 
             services.AddScoped<FileProcessingService>();
 
-            services.AddScoped<CsvDataRetrieveApiService>();
+            services.AddScoped<ICsvDataRetrieveApiService, CsvDataRetrieveApiService>();
 
             return services;
         }

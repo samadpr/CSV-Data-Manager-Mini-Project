@@ -1,12 +1,81 @@
-﻿@{
+﻿@model List<CsvDataManager.Dtos.CsvFileModelDto>
+
+@{
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/_PageLayout.cshtml";
 }
 
+<style>
+    .btnStyle {
+        background-color: #0067ac;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btnStyle:hover {
+            background-color: #004f83;
+            color: #ffffff;
+        }
+</style>
 <main id="main" class="main">
     <div class="pagetitle">
         <h1>Dashboard</h1>
     </div>
 
+    <div class="row">
+        @if (Model.Count == 0)
+        {
+            <div class="col-12 mt-5 text-center">
+                <p>No uploaded files found.</p>
+            </div>
+        }
+        else
+        {
+            @foreach (var file in Model)
+            {
+                <div class="col-sm-6">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title">@file.FileName</h5>
+                            <p class="card-text">
+                                <strong>File Size:</strong> @FormatFileSize(file.FileSize)<br />
+                                <strong>Extension:</strong> @file.Extension<br />
+                                <strong>No. of Rows:</strong> @file.NoOfRow<br />
+                                <strong>Status:</strong> @file.Status
+                            </p>
+                            <a href="@file.FilePath" class="btn btnStyle" data-mdb-ripple-init>View File</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
 
 </main>
+
+@functions {
+    public string FormatFileSize(long fileSizeInBytes)
+    {
+        if (fileSizeInBytes >= 1024 * 1024 * 1024)
+        {
+            return $"{fileSizeInBytes / (1024 * 1024 * 1024.0):F2} GB";
+        }
+        else if (fileSizeInBytes >= 1024 * 1024)
+        {
+            return $"{fileSizeInBytes / (1024 * 1024.0):F2} MB";
+        }
+        else if (fileSizeInBytes >= 1024)
+        {
+            return $"{fileSizeInBytes / 1024.0:F2} KB";
+        }
+        else
+        {
+            return $"{fileSizeInBytes} Bytes";
+        }
+    }
+}

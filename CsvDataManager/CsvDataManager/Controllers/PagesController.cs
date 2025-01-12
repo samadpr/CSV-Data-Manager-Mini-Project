@@ -1,22 +1,34 @@
 ﻿using CsvDataManager.Dtos;
 using CsvDataManager.Service;
+using CsvDataManager.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace CsvDataManager.Controllers
 {
     public class PagesController : Controller
     {
         private readonly FileProcessingService _fileProcessingService;
-        private readonly CsvDataRetrieveApiService _csvDataRetrieveApiService;
+        private readonly ICsvDataRetrieveApiService _csvDataRetrieveApiService;
 
-        public PagesController(FileProcessingService fileProcessingService, CsvDataRetrieveApiService csvDataRetrieveApiService)
+        public PagesController(FileProcessingService fileProcessingService, ICsvDataRetrieveApiService csvDataRetrieveApiService)
         {
             _fileProcessingService = fileProcessingService;
             _csvDataRetrieveApiService = csvDataRetrieveApiService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            string userIdString = HttpContext.Session.GetString("UserId");
+            if (string.IsNullOrEmpty(userIdString))
+            {
+                ViewData["Message"] = "❌ User session not found.";
+                return View(new List<CsvFileModelDto>());
+            }
+
+            Guid userId = Guid.Parse(userIdString);
+            var csvFileList = await _csvDataRetrieveApiService.GetUploadedCsvFilesByUserIdAsync(userId);
+
+            return View(csvFileList);
         }
 
         public IActionResult CsvImport()
@@ -96,10 +108,18 @@ namespace CsvDataManager.Controllers
 
             Guid userId = Guid.Parse(userIdString);
 
-            // Retrieve data from the API service
             var fileDataList = await _csvDataRetrieveApiService.GetFileDataByUserIdAsync(userId);
 
-            return View(fileDataList);
+            var parsedData = fileDataList
+                .Select(fd => JsonConvert.DeserializeObject<Dictionary<string, string>>(fd["data"]))
+                .ToList();
+
+            return View(parsedData);
+        }
+
+        public IActionResult ListData()
+        {
+            return View();
         }
 
         public IActionResult Profile()

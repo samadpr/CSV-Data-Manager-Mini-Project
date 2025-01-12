@@ -62,7 +62,7 @@ namespace CsvManagerAPI.API.DataManage
         }
 
         [HttpGet]
-        [Route("get-file-data/{userId}")]
+        [Route("csv-data-manager/get-file-data/{userId}")]
         public async Task<IActionResult> GetFileDataByUserId(Guid userId)
         {
             try
@@ -78,6 +78,17 @@ namespace CsvManagerAPI.API.DataManage
             {
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
+        }
+
+        [HttpGet]
+        [Route("csv-data-manager/get-csv-file/{userId}")]
+        public async Task<IActionResult> GetCsvFileByUserId(Guid userId)
+        {
+            var csvFiles = await _csvManagerService.GetCsvFileByUserIdAsync(userId);
+            if (csvFiles == null || csvFiles.Count == 0)
+                return NotFound("No CSV files found for the user.");
+
+            return Ok(csvFiles);
         }
 
     }

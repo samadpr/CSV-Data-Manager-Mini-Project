@@ -30,14 +30,14 @@ namespace Domain.Services.CsvManager
             await _repository.SaveCsvUploaderAsync(csvUploader);
         }
 
-        public async Task SaveFileDataAsync(FileDataDto fileDataDto)
-        {
-            if (fileDataDto == null) throw new ArgumentNullException(nameof(fileDataDto));
+        //public async Task SaveFileDataAsync(FileDataDto fileDataDto)
+        //{
+        //    if (fileDataDto == null) throw new ArgumentNullException(nameof(fileDataDto));
 
-            var fileData = _mapper.Map<FileData>(fileDataDto);
+        //    var fileData = _mapper.Map<FileData>(fileDataDto);
 
-            await _repository.SaveFileDataAsync(fileData);
-        }
+        //    await _repository.SaveFileDataAsync(fileData);
+        //}
 
         public async Task SaveBatchFileDataAsync(FileDataDto fileDataDtos)
         {
@@ -52,6 +52,13 @@ namespace Domain.Services.CsvManager
         {
             var fileDataList = await _repository.GetFileDataByUserIdAsync(userId);
             return _mapper.Map<List<FileDataDto>>(fileDataList);
+        }
+
+        public async Task<List<CsvUploaderDto>> GetCsvFileByUserIdAsync(Guid userId)
+        {
+            var csvFiles = await _repository.GetCsvFileByUserIdAsync(userId);
+
+            return _mapper.Map<List<CsvUploaderDto>>(csvFiles);
         }
     }
 }

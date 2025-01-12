@@ -1,16 +1,16 @@
 ﻿@model List<Dictionary<string, string>>
 @{
-    ViewData["Title"] = "Manage Data";
+    ViewData["Title"] = "List Data";
     Layout = "~/Views/Shared/_PageLayout.cshtml";
 }
 
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>Manage Data</h1>
+        <h1>List of Data</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a asp-controller="Page" asp-action="Index">Dashboard</a></li>
-                <li class="breadcrumb-item active">ManageData</li>
+                <li class="breadcrumb-item active">ListData</li>
             </ol>
         </nav>
     </div>
@@ -20,7 +20,6 @@
     }
     else
     {
-        <!-- Generate a table with dynamic headers and rows -->
         <table class="table table-striped">
             <thead>
                 <tr>
