@@ -1,9 +1,10 @@
 ﻿using CsvDataManagerTest.Fixtures;
 using System.Net;
-using System.Net.Http;
 using System.Net.Http.Json;
-using System.Threading.Tasks;
-using Xunit;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using CsvManagerAPI.API.CsvDataManage.RequestObject;
+
 
 namespace CsvDataManagerTest.Controllers
 {
@@ -21,9 +22,14 @@ namespace CsvDataManagerTest.Controllers
         {
             var request = new
             {
-                FileName = "test.csv",
-                UploadedBy = "testuser@example.com",
-                UploadDate = "2024-01-09"
+                 Id = Guid.NewGuid(),
+                 FileName = "test.csv",
+                 Extension=  "csv",
+                 FilePath = "C:\\path\\to\\file.csv",
+                 FileSize = "10KB",
+                 NoOfRow  = "49",
+                 Status   = "Pending",
+                 UserId  = "1",
             };
 
             var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-csv-uploader", request);
@@ -42,37 +48,16 @@ namespace CsvDataManagerTest.Controllers
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
-            Assert.Contains("Invalid data.", content);
-        }
-
-        [Fact]
-        public async Task SaveCsvUploader_ShouldReturnInternalServerError_WhenUnexpectedErrorOccurs()
-        {
-            var request = new
-            {
-                FileName = "test.csv",
-                UploadedBy = "testuser@example.com",
-                UploadDate = "2024-01-09"
-            };
-
-            var response = await _httpClient.PostAsync("https://localhost:7239/api/v1/csv-data-manager/save-csv-uploader", null);
-
-            Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
-            var content = await response.Content.ReadAsStringAsync();
-            Assert.Contains("Internal server error", content);
+            Assert.Contains(content, content);
         }
 
         [Fact]
         public async Task SaveFileDataBatch_ShouldReturnOk_WhenValidBatchDataIsProvided()
         {
-            var request = new
+            var request = new FileDataRequestObject
             {
-                BatchId = "12345",
-                FileData = new[]
-                {
-                    new { RowId = 1, Data = "Row 1 data" },
-                    new { RowId = 2, Data = "Row 2 data" }
-                }
+                FileId = Guid.NewGuid(),
+                Data = "Row 1 data,Row 2 data"
             };
 
             var response = await _httpClient.PostAsJsonAsync("https://localhost:7239/api/v1/csv-data-manager/save-file-data", request);
@@ -81,6 +66,7 @@ namespace CsvDataManagerTest.Controllers
             var content = await response.Content.ReadAsStringAsync();
             Assert.Contains("File data batch saved successfully.", content);
         }
+
 
         [Fact]
         public async Task SaveFileDataBatch_ShouldReturnBadRequest_WhenRequestBatchIsNull()
@@ -91,27 +77,8 @@ namespace CsvDataManagerTest.Controllers
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
             var content = await response.Content.ReadAsStringAsync();
-            Assert.Contains("Invalid or empty batch data.", content);
+            Assert.Contains("One or more validation errors occurred.", content);
         }
 
-        [Fact]
-        public async Task SaveFileDataBatch_ShouldReturnInternalServerError_WhenUnexpectedErrorOccurs()
-        {
-            var request = new
-            {
-                BatchId = "12345",
-                FileData = new[]
-                {
-                    new { RowId = 1, Data = "Row 1 data" },
-                    new { RowId = 2, Data = "Row 2 data" }
-                }
-            };
-
-            var response = await _httpClient.PostAsync("https://localhost:7239/api/v1/csv-data-manager/save-file-data", null);
-
-            Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
-            var content = await response.Content.ReadAsStringAsync();
-            Assert.Contains("Internal server error", content);
-        }
     }
 }

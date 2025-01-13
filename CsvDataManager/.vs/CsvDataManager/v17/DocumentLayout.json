@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\services\\csvmanager\\csvmanagerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\services\\csvmanager\\csvmanagerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\services\\csvmanager\\csvmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\services\\csvmanager\\csvmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\api\\csvdatamanage\\csvmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\api\\csvdatamanage\\csvmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\models\\csvuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\models\\csvuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\services\\csvmanager\\interface\\icsvmanagerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\services\\csvmanager\\interface\\icsvmanagerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\services\\csvmanager\\interface\\icsvmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\services\\csvmanager\\interface\\icsvmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\dtos\\filedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\dtos\\filedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\listdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\listdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\managedata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\managedata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\csvimport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\csvimport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\wwwroot\\js\\pages\\pagelayout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\wwwroot\\js\\pages\\pagelayout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\wwwroot\\css\\pages\\pagelayoutstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -59,100 +27,32 @@
       "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\shared\\_pagelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\service\\csvdataretrieveapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\service\\csvdataretrieveapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\services\\csvmanager\\dtos\\csvuploaderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\services\\csvmanager\\dtos\\csvuploaderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\shared\\_publiclayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\shared\\_publiclayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\controllers\\publiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\controllers\\publiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\csvimport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\csvimport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\service\\interface\\icsvdataretrieveapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\service\\interface\\icsvdataretrieveapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\service\\csvdatasaveapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\service\\csvdatasaveapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\service\\fileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\service\\fileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\dtos\\csvfilemodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\dtos\\csvfilemodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\services\\csvmanager\\dtos\\filedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\services\\csvmanager\\dtos\\filedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\models\\filedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\models\\filedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\api\\csvdatamanage\\requestobject\\csvuploaderrequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\api\\csvdatamanage\\requestobject\\csvuploaderrequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\extensions\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\extensions\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\api\\csvdatamanage\\requestobject\\filedatarequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\api\\csvdatamanage\\requestobject\\filedatarequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\domain\\models\\csvdatamanagerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48950B3C-FCA8-43E1-BD29-4153973DBA74}|Domain\\Domain.csproj|solutionrelative:domain\\models\\csvdatamanagerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{575797C3-973D-4D73-A121-1DB11573BFE4}|CsvDataManagerTest\\CsvDataManagerTest.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanagertest\\controllers\\usercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{575797C3-973D-4D73-A121-1DB11573BFE4}|CsvDataManagerTest\\CsvDataManagerTest.csproj|solutionrelative:csvdatamanagertest\\controllers\\usercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\api\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\api\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{575797C3-973D-4D73-A121-1DB11573BFE4}|CsvDataManagerTest\\CsvDataManagerTest.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanagertest\\controllers\\csvmanagercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{575797C3-973D-4D73-A121-1DB11573BFE4}|CsvDataManagerTest\\CsvDataManagerTest.csproj|solutionrelative:csvdatamanagertest\\controllers\\csvmanagercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\api\\user\\requestobject\\signuprequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\api\\user\\requestobject\\signuprequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{575797C3-973D-4D73-A121-1DB11573BFE4}|CsvDataManagerTest\\CsvDataManagerTest.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanagertest\\fixtures\\webapiapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{575797C3-973D-4D73-A121-1DB11573BFE4}|CsvDataManagerTest\\CsvDataManagerTest.csproj|solutionrelative:csvdatamanagertest\\fixtures\\webapiapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvmanagerapi\\api\\user\\requestobject\\loginrequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D914BD-5209-446E-ADE4-07BF8B499C45}|CsvManagerAPI\\CsvManagerAPI.csproj|solutionrelative:csvmanagerapi\\api\\user\\requestobject\\loginrequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|d:\\interview\\lucideplusmachinetest\\new project clone\\csv-data-manager-mini-project\\csvdatamanager\\csvdatamanager\\views\\pages\\listdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E44C96D-EBDE-4172-B4ED-90CE0F361B54}|CsvDataManager\\CsvDataManager.csproj|solutionrelative:csvdatamanager\\views\\pages\\listdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -162,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,484 +90,162 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CsvManagerController.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\CsvDataManage\\CsvManagerController.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\API\\CsvDataManage\\CsvManagerController.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\CsvDataManage\\CsvManagerController.cs",
-              "RelativeToolTip": "CsvManagerAPI\\API\\CsvDataManage\\CsvManagerController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:29:02.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FileDataDto.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Dtos\\FileDataDto.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Dtos\\FileDataDto.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Dtos\\FileDataDto.cs",
-              "RelativeToolTip": "CsvDataManager\\Dtos\\FileDataDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:48:59.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CsvManagerRepository.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\CsvManagerRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\CsvManager\\CsvManagerRepository.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\CsvManagerRepository.cs",
-              "RelativeToolTip": "Domain\\Services\\CsvManager\\CsvManagerRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:58:57.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CsvManagerService.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\CsvManagerService.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\CsvManager\\CsvManagerService.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\CsvManagerService.cs",
-              "RelativeToolTip": "Domain\\Services\\CsvManager\\CsvManagerService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAYwC8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:57:59.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICsvManagerService.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\Interface\\ICsvManagerService.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\CsvManager\\Interface\\ICsvManagerService.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\Interface\\ICsvManagerService.cs",
-              "RelativeToolTip": "Domain\\Services\\CsvManager\\Interface\\ICsvManagerService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwA4AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:51:36.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ICsvManagerRepository.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\Interface\\ICsvManagerRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\CsvManager\\Interface\\ICsvManagerRepository.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\Interface\\ICsvManagerRepository.cs",
-              "RelativeToolTip": "Domain\\Services\\CsvManager\\Interface\\ICsvManagerRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwA0AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:51:26.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CsvUploader.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Models\\CsvUploader.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\CsvUploader.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Models\\CsvUploader.cs",
-              "RelativeToolTip": "Domain\\Models\\CsvUploader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T17:17:01.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ListData.cshtml",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ListData.cshtml",
-              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\ListData.cshtml",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ListData.cshtml",
-              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\ListData.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T10:31:52.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ManageData.cshtml",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ManageData.cshtml",
-              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\ManageData.cshtml",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ManageData.cshtml",
-              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\ManageData.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwCMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T16:08:34.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PagesController.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Controllers\\PagesController.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Controllers\\PagesController.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Controllers\\PagesController.cs",
-              "RelativeToolTip": "CsvDataManager\\Controllers\\PagesController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:13:53.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PageLayout.js",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
-              "RelativeDocumentMoniker": "CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
-              "RelativeToolTip": "CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwB0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-12T02:57:54.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\Index.cshtml",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Index.cshtml",
-              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAACsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T16:08:25.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CsvDataRetrieveApiService.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\CsvDataRetrieveApiService.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Service\\CsvDataRetrieveApiService.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\CsvDataRetrieveApiService.cs",
-              "RelativeToolTip": "CsvDataManager\\Service\\CsvDataRetrieveApiService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAtwB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:40:53.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "PageLayoutStyle.css",
               "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\Pages\\PageLayoutStyle.css",
               "RelativeDocumentMoniker": "CsvDataManager\\wwwroot\\css\\Pages\\PageLayoutStyle.css",
               "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\Pages\\PageLayoutStyle.css",
               "RelativeToolTip": "CsvDataManager\\wwwroot\\css\\Pages\\PageLayoutStyle.css",
-              "ViewState": "AgIAAH4BAAAAAAAAAAAswIYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAAAIwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-12T03:17:27.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T14:25:53.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_PageLayout.cshtml",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
-              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
-              "RelativeToolTip": "CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Settings.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\Settings.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Settings.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\Settings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T10:23:26.601Z",
+              "WhenOpened": "2025-01-12T14:07:15.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Profile.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\Profile.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Profile.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T14:07:09.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageData.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ManageData.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\ManageData.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ManageData.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\ManageData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T14:07:04.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApplicationServiceExtensions.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Extensions\\ApplicationServiceExtensions.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeToolTip": "CsvDataManager\\Extensions\\ApplicationServiceExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:36:05.598Z",
+              "DocumentIndex": 11,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\Privacy.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T14:06:59.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageLayout.js",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
+              "RelativeDocumentMoniker": "CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
+              "RelativeToolTip": "CsvDataManager\\wwwroot\\js\\Pages\\PageLayout.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-12T14:21:20.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CsvUploaderDto.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\DTOs\\CsvUploaderDto.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\CsvManager\\DTOs\\CsvUploaderDto.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\DTOs\\CsvUploaderDto.cs",
-              "RelativeToolTip": "Domain\\Services\\CsvManager\\DTOs\\CsvUploaderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T13:02:28.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PublicController.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Controllers\\PublicController.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Controllers\\PublicController.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Controllers\\PublicController.cs",
-              "RelativeToolTip": "CsvDataManager\\Controllers\\PublicController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwDUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:44:02.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 1,
               "Title": "CsvImport.cshtml",
               "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\CsvImport.cshtml",
               "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\CsvImport.cshtml",
               "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\CsvImport.cshtml",
               "RelativeToolTip": "CsvDataManager\\Views\\Pages\\CsvImport.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T14:06:27.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "CsvDataManager\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "CsvDataManager\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-13T00:58:31.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CsvDataManager\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CsvDataManager\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-12T14:58:50.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_PageLayout.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Shared\\_PageLayout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAE4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T14:09:07.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\Index.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T14:06:43.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_PublicLayout.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Shared\\_PublicLayout.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Shared\\_PublicLayout.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Shared\\_PublicLayout.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Shared\\_PublicLayout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T16:08:56.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T14:09:14.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ICsvDataRetrieveApiService.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\Interface\\ICsvDataRetrieveApiService.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Service\\Interface\\ICsvDataRetrieveApiService.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\Interface\\ICsvDataRetrieveApiService.cs",
-              "RelativeToolTip": "CsvDataManager\\Service\\Interface\\ICsvDataRetrieveApiService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T12:44:52.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Program.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Program.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Program.cs",
-              "RelativeToolTip": "CsvDataManager\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:19:19.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\Program.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\Program.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\Program.cs",
-              "RelativeToolTip": "CsvManagerAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:02:17.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ApplicationServiceExtensions.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\Extensions\\ApplicationServiceExtensions.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeToolTip": "CsvManagerAPI\\Extensions\\ApplicationServiceExtensions.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA1wA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:35:40.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CsvDataSaveApiService.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\CsvDataSaveApiService.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Service\\CsvDataSaveApiService.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\CsvDataSaveApiService.cs",
-              "RelativeToolTip": "CsvDataManager\\Service\\CsvDataSaveApiService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:08:21.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FileProcessingService.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\FileProcessingService.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Service\\FileProcessingService.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Service\\FileProcessingService.cs",
-              "RelativeToolTip": "CsvDataManager\\Service\\FileProcessingService.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAwwH4AAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T15:18:07.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CsvFileModelDto.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Dtos\\CsvFileModelDto.cs",
-              "RelativeDocumentMoniker": "CsvDataManager\\Dtos\\CsvFileModelDto.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Dtos\\CsvFileModelDto.cs",
-              "RelativeToolTip": "CsvDataManager\\Dtos\\CsvFileModelDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:49:01.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FileDataDto.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\DTOs\\FileDataDto.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\CsvManager\\DTOs\\FileDataDto.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Services\\CsvManager\\DTOs\\FileDataDto.cs",
-              "RelativeToolTip": "Domain\\Services\\CsvManager\\DTOs\\FileDataDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T13:01:47.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CsvUploaderRequestObject.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\CsvUploaderRequestObject.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\CsvUploaderRequestObject.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\CsvUploaderRequestObject.cs",
-              "RelativeToolTip": "CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\CsvUploaderRequestObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:31:50.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FileData.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Models\\FileData.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\FileData.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Models\\FileData.cs",
-              "RelativeToolTip": "Domain\\Models\\FileData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T15:16:58.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FileDataRequestObject.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\FileDataRequestObject.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\FileDataRequestObject.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\FileDataRequestObject.cs",
-              "RelativeToolTip": "CsvManagerAPI\\API\\CsvDataManage\\RequestObject\\FileDataRequestObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T17:09:59.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\Extensions\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\Extensions\\AutoMapperProfiles.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\Extensions\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "CsvManagerAPI\\Extensions\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T17:10:26.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CsvDataManagerDbContext.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Models\\CsvDataManagerDbContext.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\CsvDataManagerDbContext.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\Domain\\Models\\CsvDataManagerDbContext.cs",
-              "RelativeToolTip": "Domain\\Models\\CsvDataManagerDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:51:49.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "WebApiApplicationFactory.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManagerTest\\Fixtures\\WebApiApplicationFactory.cs",
-              "RelativeDocumentMoniker": "CsvDataManagerTest\\Fixtures\\WebApiApplicationFactory.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManagerTest\\Fixtures\\WebApiApplicationFactory.cs",
-              "RelativeToolTip": "CsvDataManagerTest\\Fixtures\\WebApiApplicationFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:21:25.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UserControllerTest.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManagerTest\\Controllers\\UserControllerTest.cs",
-              "RelativeDocumentMoniker": "CsvDataManagerTest\\Controllers\\UserControllerTest.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManagerTest\\Controllers\\UserControllerTest.cs",
-              "RelativeToolTip": "CsvDataManagerTest\\Controllers\\UserControllerTest.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA5wBgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:37:27.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\User\\UserController.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\API\\User\\UserController.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\User\\UserController.cs",
-              "RelativeToolTip": "CsvManagerAPI\\API\\User\\UserController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:47:19.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CsvManagerControllerTest.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManagerTest\\Controllers\\CsvManagerControllerTest.cs",
-              "RelativeDocumentMoniker": "CsvDataManagerTest\\Controllers\\CsvManagerControllerTest.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManagerTest\\Controllers\\CsvManagerControllerTest.cs",
-              "RelativeToolTip": "CsvDataManagerTest\\Controllers\\CsvManagerControllerTest.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:21:13.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "SignUpRequestObject.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\User\\RequestObject\\SignUpRequestObject.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\API\\User\\RequestObject\\SignUpRequestObject.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\User\\RequestObject\\SignUpRequestObject.cs",
-              "RelativeToolTip": "CsvManagerAPI\\API\\User\\RequestObject\\SignUpRequestObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T05:12:12.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "LoginRequestObject.cs",
-              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\User\\RequestObject\\LoginRequestObject.cs",
-              "RelativeDocumentMoniker": "CsvManagerAPI\\API\\User\\RequestObject\\LoginRequestObject.cs",
-              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvManagerAPI\\API\\User\\RequestObject\\LoginRequestObject.cs",
-              "RelativeToolTip": "CsvManagerAPI\\API\\User\\RequestObject\\LoginRequestObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T05:12:46.103Z"
+              "DocumentIndex": 12,
+              "Title": "ListData.cshtml",
+              "DocumentMoniker": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ListData.cshtml",
+              "RelativeDocumentMoniker": "CsvDataManager\\Views\\Pages\\ListData.cshtml",
+              "ToolTip": "D:\\Interview\\LucidePlusMachineTest\\New Project Clone\\CSV-Data-Manager-Mini-Project\\CsvDataManager\\CsvDataManager\\Views\\Pages\\ListData.cshtml",
+              "RelativeToolTip": "CsvDataManager\\Views\\Pages\\ListData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T14:06:53.762Z"
             }
           ]
         }
