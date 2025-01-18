@@ -1,4 +1,4 @@
-﻿window.onload = function () {
+﻿/*window.onload = function () {
     const sidebar = document.querySelector(".sidebar");
     const closeBtn = document.querySelector("#btn");
     const searchBtn = document.querySelector(".bx-search")
@@ -20,7 +20,7 @@
             closeBtn.classList.replace("bx-menu-alt-right", "bx-menu")
         }
     }
-}
+}*/
 
 //INTEX PAGE JSON
 

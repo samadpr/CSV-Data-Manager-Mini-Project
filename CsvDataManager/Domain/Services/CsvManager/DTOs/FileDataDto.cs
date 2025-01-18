@@ -8,6 +8,7 @@ namespace Domain.Services.CsvManager.DTOs
 {
     public class FileDataDto
     {
+        public Guid Id { get; set; }
         public Guid FileId { get; set; }
         public string Data { get; set; } = null!;
     }

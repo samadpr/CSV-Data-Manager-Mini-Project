@@ -15,5 +15,6 @@ namespace Domain.Services.CsvManager.Interface
         Task SaveBatchFileDataAsync(FileData fileDataBatch);
         Task<List<FileData>> GetFileDataByUserIdAsync(Guid userId);
         Task<List<CsvUploader>> GetCsvFileByUserIdAsync(Guid userId);
+        Task<List<FileData>> GetFileDataByFileIdAsync(Guid fileId);
     }
 }

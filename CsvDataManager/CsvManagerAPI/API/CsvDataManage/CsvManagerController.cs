@@ -62,7 +62,7 @@ namespace CsvManagerAPI.API.DataManage
         }
 
         [HttpGet]
-        [Route("csv-data-manager/get-file-data/{userId}")]
+        [Route("csv-data-manager/get-file-data-by-user-id/{userId}")]
         public async Task<IActionResult> GetFileDataByUserId(Guid userId)
         {
             try
@@ -91,6 +91,20 @@ namespace CsvManagerAPI.API.DataManage
             return Ok(csvFiles);
         }
 
+
+        [HttpGet("csv-data-manager/get-file-data_by_file_id/{fileId}")]
+        public async Task<IActionResult> GetFileDataByFileId(Guid fileId)
+        {
+            if (fileId == Guid.Empty)
+                return BadRequest("Invalid File ID.");
+
+            var fileData = await _csvManagerService.GetFileDataByFileIdAsync(fileId);
+
+            if (fileData == null || !fileData.Any())
+                return NotFound("No data found for the given File ID.");
+
+            return Ok(fileData);
+        }
     }
 }
 

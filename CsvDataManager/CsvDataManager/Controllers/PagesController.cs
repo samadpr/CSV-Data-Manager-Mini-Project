@@ -16,7 +16,7 @@ namespace CsvDataManager.Controllers
             _fileProcessingService = fileProcessingService;
             _csvDataRetrieveApiService = csvDataRetrieveApiService;
         }
-        public async Task<IActionResult> Index()
+         public async Task<IActionResult> Index()
         {
             string userIdString = HttpContext.Session.GetString("UserId");
             if (string.IsNullOrEmpty(userIdString))
@@ -117,10 +117,38 @@ namespace CsvDataManager.Controllers
             return View(parsedData);
         }
 
-        public IActionResult ListData()
+        public async Task<IActionResult> ListData(Guid fileId)
         {
-            return View();
+            if (fileId == Guid.Empty)
+            {
+                ViewData["Message"] = "❌ Invalid File ID. Please select a valid file.";
+                return View(new List<Dictionary<string, string>>());
+            }
+
+            try
+            {
+                var fileData = await _csvDataRetrieveApiService.GetFileDataByFileIdAsync(fileId);
+
+                if (fileData == null || !fileData.Any())
+                {
+                    ViewData["Message"] = "❌ No data found for the selected file.";
+                    return View(new List<Dictionary<string, string>>());
+                }
+
+                var parsedData = fileData
+                    .Select(fd => JsonConvert.DeserializeObject<Dictionary<string, string>>(fd["data"]))
+                    .ToList();
+
+                return View(parsedData);
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = $"❌ An error occurred while fetching the file data: {ex.Message}";
+                return View(new List<Dictionary<string, string>>());
+            }
         }
+
+
 
         public IActionResult Profile()
         {

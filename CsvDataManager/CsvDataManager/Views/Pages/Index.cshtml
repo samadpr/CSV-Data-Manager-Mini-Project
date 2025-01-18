@@ -48,7 +48,7 @@
                                 <strong>No. of Rows:</strong> @file.NoOfRow<br />
                                 <strong>Status:</strong> @file.Status
                             </p>
-                            <a href="@file.FilePath" class="btn btnStyle" data-mdb-ripple-init>View File</a>
+                            <a asp-controller="Pages" asp-action="ListData" asp-route-fileId="@file.Id" class="btn btnStyle" data-mdb-ripple-init>View File</a>
                         </div>
                     </div>
                 </div>

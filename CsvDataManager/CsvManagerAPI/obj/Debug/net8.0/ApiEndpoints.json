@@ -17,8 +17,24 @@
   },
   {
     "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
+    "Method": "GetFileDataByFileId",
+    "RelativePath": "api/v1/csv-data-manager/get-file-data_by_file_id/{fileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CsvManagerAPI.API.DataManage.CsvManagerController",
     "Method": "GetFileDataByUserId",
-    "RelativePath": "api/v1/csv-data-manager/get-file-data/{userId}",
+    "RelativePath": "api/v1/csv-data-manager/get-file-data-by-user-id/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

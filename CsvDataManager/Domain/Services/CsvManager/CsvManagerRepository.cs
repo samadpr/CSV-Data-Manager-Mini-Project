@@ -25,12 +25,6 @@ namespace Domain.Services.CsvManager
             await _context.SaveChangesAsync();
         }
 
-        //public async Task SaveFileDataAsync(FileData fileData)
-        //{
-        //    await _context.FileData.AddAsync(fileData);
-        //    await _context.SaveChangesAsync();
-        //}
-
         public async Task SaveBatchFileDataAsync(FileData fileDataBatch)
         {
             await _context.FileData.AddRangeAsync(fileDataBatch);
@@ -75,5 +69,10 @@ namespace Domain.Services.CsvManager
                 .ToListAsync();
         }
 
+
+        public async Task<List<FileData>> GetFileDataByFileIdAsync(Guid fileId)
+        {
+            return await Task.Run(() => _context.FileData.Where(fd => fd.FileId == fileId).ToList());
+        }
     }
 }

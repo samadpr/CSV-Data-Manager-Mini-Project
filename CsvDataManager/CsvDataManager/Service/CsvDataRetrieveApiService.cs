@@ -15,7 +15,7 @@ namespace CsvDataManager.Service
 
         public async Task<List<Dictionary<string, string>>> GetFileDataByUserIdAsync(Guid userId)
         {
-            var response = await _httpClient.GetAsync($"https://localhost:7239/api/v1/csv-data-manager/get-file-data/{userId}");
+            var response = await _httpClient.GetAsync($"https://localhost:7239/api/v1/csv-data-manager/get-file-data-by-user-id/{userId}");
             if(!response.IsSuccessStatusCode)
             {
                 return new List<Dictionary<string, string>>();
@@ -41,5 +41,20 @@ namespace CsvDataManager.Service
 
             return fileList ?? new List<CsvFileModelDto>();
         }
+
+        public async Task<List<Dictionary<string, string>>> GetFileDataByFileIdAsync(Guid fileId)
+        {
+            var response = await _httpClient.GetAsync($"https://localhost:7239/api/v1/csv-data-manager/get-file-data_by_file_id/{fileId}");
+            if (!response.IsSuccessStatusCode)
+            {
+                return new List<Dictionary<string, string>>();
+            }
+
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            var fileData = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(jsonResponse);
+
+            return fileData ?? new List<Dictionary<string, string>>();
+        }
+
     }
 }

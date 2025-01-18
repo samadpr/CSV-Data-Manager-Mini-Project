@@ -118,7 +118,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-    <script>
+@*     <script>
         window.onload = function () {
             const sidebar = document.querySelector(".sidebar");
             const closeBtn = document.querySelector("#btn");
@@ -142,7 +142,7 @@
                 }
             }
         }
-    </script>
+    </script> *@
     <script src="~/js/Pages/PageLayout.js"></script>
 </body>
 </html>

@@ -143,6 +143,6 @@
             }
         }
     </script>
-    <script src="~/js/Pages/PageLayout.js"></script>
+    @* <script src="~/js/Pages/PageLayout.js"></script> *@
 </body>
 </html>
